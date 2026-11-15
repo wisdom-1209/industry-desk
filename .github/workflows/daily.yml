@@ -1,0 +1,39 @@
+name: Daily 7 AM industry desk update
+
+on:
+  schedule:
+    # 07:00 Asia/Seoul (22:00 UTC on the previous day)
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: industry-desk-daily-feed
+  cancel-in-progress: false
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Generate feed
+        run: python scripts/update.py
+      - name: Commit feed update if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/feed.json
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Update morning feed"
+            git push
+          fi

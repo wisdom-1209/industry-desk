@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#35373d"/><stop offset=".58" stop-color="#17191f"/><stop offset="1" stop-color="#111318"/></linearGradient><linearGradient id="silver" x1="0" y1="0" x2=".6" y2="1"><stop stop-color="#fff"/><stop offset=".6" stop-color="#d6d9df"/><stop offset="1" stop-color="#a1a7b0"/></linearGradient><linearGradient id="red" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#860c24"/><stop offset=".55" stop-color="#ea2337"/><stop offset="1" stop-color="#ff5661"/></linearGradient><clipPath id="globe"><circle cx="326" cy="207" r="147"/></clipPath></defs>
+<rect width="512" height="512" rx="108" fill="url(#bg)"/>
+<circle cx="326" cy="207" r="146" fill="none" stroke="#81848a" stroke-width="2" opacity=".32"/>
+<g clip-path="url(#globe)" fill="#d8dbe2" opacity=".42">
+<path d="M222 119l31-26 39 12 19 19-9 18-28 5-11 23-17-11-25-11zm96-23 33-3 26 16 33 11-13 25-33-8-16 14-30-11-4-24zm-85 99 30-12 33 19 25 2 14 31-23 17-14 34-25-15-6-31-25-12zm119-7 28-26 33 7 19 31-12 21-34-5-25 24-13-20z"/>
+</g><g stroke="#969ba5" fill="none" stroke-width="2" opacity=".23"><ellipse cx="326" cy="207" rx="64" ry="147"/><ellipse cx="326" cy="207" rx="118" ry="147"/><path d="M185 179h285M187 232h282"/></g>
+<path d="M98 177L159 339 209 234 259 339 326 177" fill="none" stroke="url(#silver)" stroke-width="52" stroke-linejoin="miter"/>
+<path d="M302 254l37-77h52l-67 159-47-91" fill="url(#red)"/>
+<path d="M85 293c97 72 220 85 335-14" fill="none" stroke="#d9dce2" stroke-width="4" opacity=".8"/>
+<path d="M56 430c156-36 314-78 411-171" fill="none" stroke="url(#red)" stroke-width="16" stroke-linecap="round"/>
+<text x="256" y="415" font-family="Arial,Helvetica,sans-serif" font-size="53" font-weight="600" text-anchor="middle" letter-spacing="9" fill="#f2f3f7">WISDOM</text>
+</svg>

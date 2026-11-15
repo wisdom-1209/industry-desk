@@ -1,0 +1,20 @@
+{
+  "id": "/industry-desk/",
+  "name": "WISDOM | 산업부 워크데스크",
+  "short_name": "WISDOM",
+  "description": "산업·재계·에너지·기업·국회 법안과 일정의 기자용 아침 브리핑",
+  "start_url": "/industry-desk/",
+  "scope": "/industry-desk/",
+  "display": "standalone",
+  "background_color": "#f4f6f9",
+  "theme_color": "#27292e",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "icons/wisdom.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
